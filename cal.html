@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>calculatrice</title>
+</head>
+<body>
+    <table class="calculatrice" id="calc">
+        <tr>
+            <td colspan="4" class="calc_td_resultat">
+        <input type="text" name="calc_resultat" id="calc_resultat" class="calc_resultat" />
+            </td>
+        </tr>
+       
+        <tr>
+            <td class="calc_td_btn">
+                <input type="button" class="calc_btn" value="1" onclick="afficher(1)" />
+        </td>
+        <td class="calc_td_btn">
+                <input type="button" class="calc_btn" value="2" onclick="afficher(2)" />
+        </td>
+        <td class="calc_td_btn">
+                <input type="button" class="calc_btn" value="3" onclick="afficher(3)" />
+        </td>
+        <td class="calc_td_btn">
+            <input type="button" class="calc_btn" value="+" onclick="calculator('+')" />
+    </td>
+        </tr>
+                    <tr>
+            <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="4" onclick="afficher(4)" />
+            </td>
+            <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="5" onclick="afficher(5)" />
+            </td>
+            <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="6" onclick="afficher(6)"  />
+            </td>
+            <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="*" onclick="calculator('*')" />
+            </td>
+        </tr>
+        <tr>
+            <td class="calc_td_btn">
+                <input type="button" class="calc_btn" value="7" onclick="afficher(7)" />
+        </td>
+        <td class="calc_td_btn">
+                <input type="button" class="calc_btn" value="8" onclick="afficher(8)" />
+        </td>
+        <td class="calc_td_btn">
+                <input type="button" class="calc_btn" value="9" onclick="afficher(9)"/>
+        </td>
+        <td class="calc_td_btn">
+                <input type="button" class="calc_btn" value="-" onclick="calculator('-')" />
+        </td>
+        </tr>
+        <tr>
+            <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="0" onclick="afficher(0)" />
+            </td>
+            <td class="calc_td_btn">
+                <input type="button" class="calc_btn" value="C" onclick="ClearInput()"/>
+        </td>
+            <td class="calc_td_btn">
+                    <input type="button" class="calc_btn" value="=" onclick="result('=')"/>
+            </td>
+            <td class="calc_td_btn">
+                <input type="button" class="calc_btn" value="/" onclick="calculator('/')"/>
+        </td>
+        </tr>
+    </table>
+    <script src="cal.js"></script>
+</body>
+</html>
+
